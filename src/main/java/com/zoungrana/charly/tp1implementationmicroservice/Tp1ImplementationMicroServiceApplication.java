@@ -8,6 +8,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import java.time.LocalDate;
 
 
 @SpringBootApplication
@@ -24,6 +25,7 @@ public class Tp1ImplementationMicroServiceApplication {
                 BankAccount bankAccount=BankAccount.builder()
                         .type(Math.random()>0.5? AccountType.CURRENT_ACCOUNT:AccountType.SAVING_ACCOUNT)
                         .balance(10000+Math.random()*80000)
+                        .createdAt(LocalDate.now())
                         .currency("MAD")
                         .build();
                 bankAccountRepository.save(bankAccount);

@@ -1,10 +1,7 @@
 package com.zoungrana.charly.tp1implementationmicroservice.entities;
 
 import com.zoungrana.charly.tp1implementationmicroservice.enums.AccountType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -25,7 +22,8 @@ public class BankAccount {
     @Id @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     private LocalDate createdAt;
-    private double balance;
+    private Double balance;
     private String currency;
+    @Enumerated(EnumType.STRING)
     private AccountType type;
 }
