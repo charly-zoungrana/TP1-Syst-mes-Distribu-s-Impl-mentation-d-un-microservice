@@ -37,17 +37,13 @@ public class AccountRestController {
     @PostMapping("/bankAccounts")
     public BankAccountResponseDTO save(@RequestBody BankAccountRequestDTO bankAccountRequestDTO){
 
-        return bankAccountService.addAcount(bankAccountRequestDTO);
+        return bankAccountService.addAccount(bankAccountRequestDTO);
     }
 
     @PutMapping("/bankAccounts/{id}")
-    public BankAccount update(@PathVariable UUID id,@RequestBody BankAccount bankAccount){
-        BankAccount account=bankAccountRepository.findById(id).orElseThrow(()->new RuntimeException(String.format("BankAccount %s not found",id)));
-        if(bankAccount.getBalance()!=null) account.setBalance(bankAccount.getBalance());
-        if(bankAccount.getCurrency()!=null) account.setCurrency(bankAccount.getCurrency());
-        if(bankAccount.getCreatedAt()!=null) account.setCreatedAt(LocalDate.now());
-        if(bankAccount.getType()!=null) account.setType(bankAccount.getType());
-        return bankAccountRepository.save(account);
+    public BankAccountResponseDTO update(@PathVariable UUID id,@RequestBody BankAccountRequestDTO bankAccount){
+
+        return bankAccountService.updateAccount(id,bankAccount);
     }
 
     @DeleteMapping("/bankAccounts/{id}")
