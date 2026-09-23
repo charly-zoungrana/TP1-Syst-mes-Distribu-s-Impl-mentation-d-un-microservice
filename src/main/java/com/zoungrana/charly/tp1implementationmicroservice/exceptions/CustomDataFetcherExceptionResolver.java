@@ -10,11 +10,6 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 
-/**
- * @author Charly Zoungrana
- * @created 22/09/2026
- * @time 22:02
- */
 
 @Component
 public class CustomDataFetcherExceptionResolver extends DataFetcherExceptionResolverAdapter {

@@ -10,11 +10,7 @@ import org.springframework.data.rest.core.annotation.RestResource;
 import java.util.List;
 import java.util.UUID;
 
-/**
- * @author Charly Zoungrana
- * @created 22/09/2026
- * @time 00:18
- */
+
 @RepositoryRestResource
 public interface BankAccountRepository extends JpaRepository<BankAccount, UUID> {
 

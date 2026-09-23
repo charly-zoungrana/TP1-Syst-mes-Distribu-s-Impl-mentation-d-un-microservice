@@ -12,11 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.time.LocalDate;
 import java.util.UUID;
 
-/**
- * @author Charly Zoungrana
- * @created 22/09/2026
- * @time 13:04
- */
+
 
 @Service
 @Transactional

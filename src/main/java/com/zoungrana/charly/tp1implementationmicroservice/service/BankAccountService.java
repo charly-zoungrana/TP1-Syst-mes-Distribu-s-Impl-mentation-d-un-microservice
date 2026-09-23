@@ -6,11 +6,7 @@ import com.zoungrana.charly.tp1implementationmicroservice.dtos.BankAccountRespon
 import java.util.UUID;
 
 
-/**
- * @author Charly Zoungrana
- * @created 22/09/2026
- * @time 12:57
- */
+
 public interface BankAccountService {
 
     public BankAccountResponseDTO addAccount(BankAccountRequestDTO bankAccountDTO);

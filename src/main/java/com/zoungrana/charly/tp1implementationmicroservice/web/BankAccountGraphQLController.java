@@ -16,11 +16,7 @@ import org.springframework.stereotype.Controller;
 import java.util.List;
 import java.util.UUID;
 
-/**
- * @author Charly Zoungrana
- * @created 22/09/2026
- * @time 21:28
- */
+
 
 @Controller
 @RequiredArgsConstructor

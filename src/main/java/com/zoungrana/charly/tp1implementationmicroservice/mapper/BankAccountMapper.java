@@ -8,13 +8,6 @@ import org.mapstruct.MappingTarget;
 import org.mapstruct.NullValuePropertyMappingStrategy;
 import org.mapstruct.ReportingPolicy;
 
-import java.lang.annotation.Target;
-
-/**
- * @author Charly Zoungrana
- * @created 22/09/2026
- * @time 13:13
- */
 
 @Mapper(componentModel = "spring",
         nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE,
