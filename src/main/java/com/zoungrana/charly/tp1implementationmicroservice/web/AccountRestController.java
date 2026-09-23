@@ -8,15 +8,11 @@ import com.zoungrana.charly.tp1implementationmicroservice.service.BankAccountSer
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDate;
+
 import java.util.List;
 import java.util.UUID;
 
-/**
- * @author Charly Zoungrana
- * @created 22/09/2026
- * @time 00:47
- */
+
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api")

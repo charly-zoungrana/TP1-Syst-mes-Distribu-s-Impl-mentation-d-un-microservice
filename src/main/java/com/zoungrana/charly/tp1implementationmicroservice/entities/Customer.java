@@ -8,11 +8,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 import java.util.UUID;
-/**
- * @author Charly Zoungrana
- * @created 22/09/2026
- * @time 23:43
- */
+
 @Entity
 @NoArgsConstructor @AllArgsConstructor @Data @Builder
 public class Customer {

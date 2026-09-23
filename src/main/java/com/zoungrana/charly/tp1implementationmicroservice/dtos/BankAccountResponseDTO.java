@@ -9,12 +9,6 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDate;
 import java.util.UUID;
 
-/**
- * @author Charly Zoungrana
- * @created 22/09/2026
- * @time 13:00
- */
-
 @Data @NoArgsConstructor @AllArgsConstructor @Builder
 public class BankAccountResponseDTO {
     private UUID id;
